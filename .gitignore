@@ -1,0 +1,48 @@
+# --- Python / System ---
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+Thumbs.db
+
+# --- Environments (Crucial!) ---
+.venv/
+venv/
+env/
+bin/
+lib/
+include/
+share/
+
+# --- Data (Don't upload large CSVs) ---
+# Usually, you want to keep the raw data out of Git
+data/raw/
+data/processed/
+*.csv
+*.xlsx
+*.sql
+*.sqlite
+
+# --- Machine Learning Artifacts ---
+# These can be huge and aren't "code"
+*.pkl
+*.joblib
+*.h5
+*.onnx
+*.pb
+models/
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# --- Credentials & Config ---
+.env
+config.json
+secrets.txt
+
+# --- Logs & Outputs ---
+logs/
+*.log
+plots/
+figures/
